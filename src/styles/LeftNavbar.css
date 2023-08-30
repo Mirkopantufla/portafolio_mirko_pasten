@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.nav-link {
+    font-family: 'Russo One', sans-serif;
+    background-color: rgba(240, 255, 255, 0.161);
+    padding: 5px;
+}
+
 .MPLogo {
     animation: rotate 20s linear infinite;
 }
