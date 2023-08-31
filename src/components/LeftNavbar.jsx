@@ -8,34 +8,20 @@ import '../styles/LeftNavbar.css'
 const LeftNavbar = () => {
     return (
         // d-none d-sm-block 
-        <nav className="navbar col-sm-3 col-md-2 col-xl-2 px-sm-2 p-0 bg-dark sticky-top">
-            <div className="d-flex align-items-center flex-sm-column pt-2 customHeigth">
-                <ul className="collapse nav nav-pills d-flex align-items-center flex-sm-column mb-sm-auto mb-0 align-items-sm-start" id="menu">
+        <nav className="navbar col-sm-3 col-md-2 col-xl-2 px-sm-2 p-0 bg-dark border-end customHeigth">
+            <div className="d-flex align-items-center justify-content-between flex-sm-column h-100">
+                <ul className="collapse nav nav-pills d-flex flex-sm-column mb-0" id="menu">
 
-                    <Link to='/'><img className='mb-md-0 p-sm-2 p-lg-2 me-md-auto MPLogo img-fluid' src={MPLogo} alt="Logo Mirko Pasten" /></Link>
+                    <Link to='/'><img className='mb-md-0 p-sm-2 me-md-auto MPLogo img-fluid' src={MPLogo} alt="Logo Mirko Pasten" /></Link>
 
-                    <li className="nav-item">
-                        <a href="#" className="nav-link align-middle px-0">
-                            <i className="fs-4"></i> <span className="ms-1 d-none d-sm-inline greenLogoColor">Home</span>
-                        </a>
-                    </li>
-                    <li >
-                        <a href="#submenu" data-bs-toggle="collapse" className="nav-link px-0 align-middle " aria-expanded="false" aria-controls="submenu">
-                            <i className="fs-4"></i> <span className="ms-1 d-none d-sm-inline greenLogoColor">Bootstrap</span>
-                        </a>
-                        <ul className="collapse nav flex-column ms-1" id="submenu" data-bs-parent="#menu">
-                            <li className="w-100">
-                                <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">Item</span> 1</a>
-                            </li>
-                            <li>
-                                <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">Item</span> 2</a>
-                            </li>
-                        </ul>
-                    </li>
                     <li>
+                        <a href="#" className="nav-link align-middle px-0">
+                            <i className="fs-4"></i> <span className="ms-1 d-none d-sm-inline light-greenMP">Sobre Mí</span>
+                        </a>
                         <a href="#submenu2" data-bs-toggle="collapse" className="nav-link px-0 align-middle">
-                            <i className="fs-4"></i> <span className="ms-1 d-none d-sm-inline greenLogoColor">Proyectos</span> </a>
-                        <ul className="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                            <span className="ms-1 d-none d-sm-inline">Proyectos</span>
+                        </a>
+                        <ul className="collapse nav flex-sm-column" id="submenu2" data-bs-parent="#menu">
                             <li className="w-100">
                                 <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">Product</span> 1</a>
                             </li>
@@ -52,9 +38,10 @@ const LeftNavbar = () => {
                     </li>
                     <li>
                         <a href="#" className="nav-link px-0 align-middle">
-                            <span className="ms-1 d-none d-sm-inline greenLogoColor">Customers</span>
+                            <span className="ms-1 d-none d-sm-inline light-greenMP">Customers</span>
                         </a>
                     </li>
+
                 </ul>
                 <hr />
                 <div className='row d-none d-sm-flex flex-sm-column justify-content-center gy-sm-4 mb-sm-4 mx-auto'>

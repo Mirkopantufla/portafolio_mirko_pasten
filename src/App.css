@@ -2,3 +2,9 @@ body {
     padding: 0;
     margin: 0
 }
+
+/* Colores Custom para la pagina */
+
+.light-greenMP {
+    color: #00FF89;
+}
